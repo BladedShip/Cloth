@@ -7,3 +7,8 @@ window.addEventListener('scroll',() =>{
 
 });
 
+VanillaTilt.init(document.querySelectorAll(".prod"), {
+  
+    max: 25,
+    speed: 300,
+});
