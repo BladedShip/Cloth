@@ -7,10 +7,24 @@
   
   
 }
+.hb
+{ display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 2rem;
+  height: 4rem ;
+}
+.hbi
+{
+  width: 100%;
+  height: .2rem;
+  border-radius: 1rem;
+  background-color: #d6d6d6;
+}
 .rflexbar {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-left: 0px;
   position: sticky;
   background-color:#fef9f8;
   top:4rem;
@@ -27,7 +41,7 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
-.revrflex {
+.revreflex {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -39,27 +53,29 @@
   width: 100%;
 }
 .glay {
-  display: grid;
-  margin-top: 4rem;
+  position: relative;
+  background-color:#fef9f8;
+  top: 0px;
+  z-index: 2;
 }
+
 .rblock {
   display: block;
   width:100% ;
+
 }
 .bar {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-shrink: 0;
-  flex-grow: 1;
   background-color: #0d0d0d;
   height: 4rem;
-  margin: 0%;
-  padding: 0%;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
   justify-content: space-between;
   position: fixed;
-  z-index: 1;
+  z-index: 4;
 }
 
 body {
@@ -112,9 +128,11 @@ header {
   border-radius: 2rem;
   transition: all 0.5s;
 }
-.prod:hover {
-    transform: scale(1.05);
-  }
+.prod:hover{
+  transform-style: preserve-3d;
+  transform: translateZ(20px);
+  transform: rotate3d(0,1,0,-20deg);
+}
 .mbg {
   width: 100%;
   height: auto;
@@ -123,8 +141,8 @@ header {
     background-image: url("RES/mbg2.jpg");
     height: 50vh;
     background-size:cover;
-  
-
+    position: relative;
+    z-index: -2;
 }
 .cent h1
 {   
@@ -158,6 +176,8 @@ header {
 }
 .chumma {
   height: 4rem;
+  z-index: 4;
+  width: 100%;
 }
 .prodpic
 { 
@@ -165,6 +185,10 @@ header {
     height: 15rem;
     margin-top: 1rem;
     border-radius: 2rem 2rem 0rem 0rem;
+    transition: all 1s;
+}
+.prodpic:hover{
+  transform: translateZ(20px);
 }
 .det
 {
@@ -174,7 +198,8 @@ header {
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 1rem;
-    font-family: 'Bodoni Moda';
+      font-family: 'Bodoni Moda';
+      transform: translateZ(10px);
 }
 .pri
 {
@@ -192,6 +217,7 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  transform: translateZ(40px);
 }
 .crt
 {
@@ -203,6 +229,7 @@ header {
     margin-bottom: 1rem;
     background-color: #0d0d0d;
     border-radius: 2rem;
+    transform: translateZ(40px);
    
 }
 .crt p
@@ -214,7 +241,7 @@ header {
     font-family: 'Bodoni Moda';
 }
 .shp
-{
+{ 
   margin: 0px;
   margin-left: 1rem;
   padding: 0px;
@@ -222,11 +249,12 @@ header {
   font-family: 'Bodoni Moda';
   font-weight: 500;
   font-size: 2rem;  
+  z-index: 3;
 }
 .footer
 {
   background-color: #d6d6d6;
-  padding: 2rem;
+
 }
 .fot
 {
@@ -238,8 +266,53 @@ header {
   padding: 0px;
   width: 100%;
 }
+
+.Lower
+{
+  position: relative;
+  z-index: 2;
+
+}
+.navsh
+{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.rflexic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 7.5rem;
+  width: 1.2rem;
+  height: 1.5rem ;
+  
+}
+header
+{
+  z-index: 4;
+  width: 100%;
+}
+nav
+{
+  z-index: 4;
+  width: 100%;
+}
 @media screen and (max-width:500px)
 {
+  header
+{
+  z-index: 4;
+  width: 100%;
+}
+nav
+{
+  z-index: 4;
+  width: 100%;
+}
   .rflexbar {
     display: flex;
     flex-direction: row;
@@ -251,31 +324,33 @@ header {
     z-index: 100;
     
   }
+
   .bar {
     display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    flex-shrink: 0;
-    flex-grow: 1;
+    flex-direction: column;
     background-color: #0d0d0d;
     height: 2rem;
-    margin: 0%;
-    padding: 0%;
+    margin: 0px;
+    padding: 0px;
     width: 100%;
-    /* justify-content: space-between; */
+    align-items: flex-start;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
+  }
+  .bar div
+  {
+    max-width: 100%;
   }
   .navs {
-    margin: 0px;
-    width: 3rem;
+    margin: 1rem;
+    height: 1rem;
     padding: 0px;
     color: #fef9f8; 
     font-family: 'Bodoni Moda';
     text-decoration: none;
     font-weight: lighter;
     font-size: .5rem;
-    text-align: center;
+    text-align:end;
   }
   .bran {
     margin: 0px;
@@ -288,16 +363,22 @@ header {
   }
   .shp
   {
-    margin: 0px;
-    margin-left: 1rem;
+    margin: 1rem;
     padding: 0px;
     color: #ef9273;
     font-family: 'Bodoni Moda';
     font-weight: 500;
-    font-size: 2rem;  
+    font-size: 1rem; 
+    z-index: 3; 
+  }
+  body
+  {
+    width: 100%;
   }
   .chumma {
-    height: 2rem;
+    height: auto;
+    width: 100%;
+    position: fixed;
   }
   .cent h1
 {   
@@ -329,6 +410,7 @@ header {
   background-image: url("RES/mbg3.jpg");
   height: 15rem;
   background-size: cover;
+  max-width: 100%;
 }
 .prodpic
 { 
@@ -384,13 +466,7 @@ header {
     font-size: .5rem;
     font-family: 'Bodoni Moda';
 }
-.navic
-{
-    color: #fef9f8;
-    width: 1rem;
-    height: auto;
-    margin: 1rem;
-}
+
 .prod {
   display: flex;
   flex-direction: column;
@@ -406,12 +482,92 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem;
+  margin: 0rem;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .glay {
-  display: grid;
-  margin-top: 1rem;
+
+  z-index: 2;
+}
+.hb
+{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 1.2rem;
+  height: 1.5rem ;
+  right:.5rem;
+  position: absolute;
+  right: 1rem;
+}
+.hbi
+{
+  width: 100%;
+  height: .1rem;
+  border-radius: 1rem;
+  background-color: #d6d6d6;
+}
+.navic
+{
+    color: #fef9f8;
+    height: 1rem;
+    width: auto;
+    margin: 1rem;
+}
+.revreflex 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  transition: all 1s;
+}
+.revreflex a
+{
+  text-align: center;
+  border: .5px solid #d6d6d6; 
+  border-left: 0px;
+  border-right: 0px;
+  border-collapse: collapse ;
+  margin: 0px;
+  padding: 1rem;
+}
+.navsh
+{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  right: -100%;
+  transition: all 1s;
+
+}
+.navsh.active
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0d0d;
+  width: fit-content;
+  position: absolute;
+  right:0px;
+  top:2rem;
+  padding-bottom: 100vh;
+
+
+}
+.rflexic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 7.5rem;
+  width: 1.2rem;
+  height: 1.5rem ;
+}
+.footer
+{
+  width: 100%;
 }
 }
