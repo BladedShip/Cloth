@@ -138,11 +138,17 @@ header {
   height: auto;
 }
 .chng {
-    background-image: url("RES/mbg2.jpg");
     height: 50vh;
-    background-size:cover;
-    position: relative;
     z-index: -2;
+    overflow: hidden;
+    white-space:nowrap;
+
+}
+.chng img   
+{
+  position: absolute;
+  display: inline-block;
+  width: 100vw;
 }
 .cent h1
 {   
@@ -407,7 +413,6 @@ nav
     
 }
 .chng {
-  background-image: url("RES/mbg3.jpg");
   height: 15rem;
   background-size: cover;
   max-width: 100%;
