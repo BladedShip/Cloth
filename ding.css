@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+}
+
+.test{
+    font-family:Gilroy;
+    border: 1px black solid;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 0px;
+    position: relative;
+}
