@@ -143,6 +143,7 @@ header {
   position: relative;
   white-space: nowrap;
   width: 100%;
+  transition: all 1s ease-in-out;
   top:4rem;
 }
 

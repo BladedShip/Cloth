@@ -9,12 +9,6 @@ const togas = document.getElementById("aso");
 const togi = document.getElementById("op");
 let x = window.matchMedia("(min-width: 500px)");
 var i=1 ;
-
-window.addEventListener('scroll',() =>{
-    let ass = window.scrollY;
-    divass.style.top = -1.5*ass + 'px'; 
-
-});
 window.addEventListener('scroll',() =>{
 
     if (x.matches)
@@ -67,7 +61,7 @@ togb.addEventListener('click',() =>{
 )
 change=()=>{
     i=i%5+1;
-    togi.style.transition="1s"
+
     togi.style.backgroundImage="url('RES/bg/mbg"+i+".jpg')";
     setTimeout(change, 3000); 
 };
