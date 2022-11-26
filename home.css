@@ -4,34 +4,37 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  
-  
+
+
 }
-.hb
-{ display: none;
+
+.hb {
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   width: 2rem;
-  height: 4rem ;
+  height: 4rem;
 }
-.hbi
-{
+
+.hbi {
   width: 100%;
   height: .2rem;
   border-radius: 1rem;
   background-color: #d6d6d6;
 }
+
 .rflexbar {
   display: flex;
   flex-direction: row;
   margin-left: 0px;
   position: sticky;
-  background-color:#fef9f8;
-  top:4rem;
+  background-color: #fef9f8;
+  top: 4rem;
   width: 100vw;
   z-index: 100;
-  
+
 }
+
 .prflex {
   display: flex;
   flex-direction: row;
@@ -41,29 +44,33 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+
 .revreflex {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
+
 .cflex {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
+
 .glay {
   position: relative;
-  background-color:#fef9f8;
+  background-color: #fef9f8;
   top: 0px;
   z-index: 2;
 }
 
 .rblock {
   display: block;
-  width:100% ;
+  width: 100%;
 
 }
+
 .bar {
   display: flex;
   flex-direction: row;
@@ -83,10 +90,12 @@ body {
   margin: 0%;
   padding: 0%;
 }
+
 header {
   margin: 0%;
   padding: 0%;
 }
+
 .bran {
   margin: 0px;
   margin-left: 2rem;
@@ -95,13 +104,14 @@ header {
   font-family: 'Bodoni Moda';
   font-weight: 500;
   font-size: 3.5rem;
-   
+
 }
+
 .navs {
   margin: 0px;
   width: 7rem;
   padding: 0px;
-  color: #fef9f8; 
+  color: #fef9f8;
   font-family: 'Bodoni Moda';
   text-decoration: none;
   font-weight: lighter;
@@ -111,159 +121,182 @@ header {
 
 
 }
-.navic
-{
-    color: #fef9f8;
-    width: 1.5rem;
-    height: auto;
-    margin: 1rem;
+
+.navic {
+  color: #fef9f8;
+  width: 1.5rem;
+  height: auto;
+  margin: 1rem;
 }
+
 .prod {
   display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
   width: 20rem;
   height: 25rem;
   background-color: #ef9273;
   border-radius: 2rem;
   transition: all 0.5s;
 }
-.prod:hover{
+
+.prod:hover {
   transform-style: preserve-3d;
   transform: translateZ(20px);
-  transform: rotate3d(0,1,0,-20deg);
+  transform: rotate3d(0, 1, 0, -20deg);
 }
+
 .mbg {
   width: 100%;
   height: auto;
 }
+
 .chng {
-    height: 50vh;
-    z-index: -2;
-    overflow: hidden;
-    white-space:nowrap;
+  background-image: url("RES/bg/mbg1.jpg");
+  z-index: 3;
+  overflow-x: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background-size: cover;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
 
 }
-.chng img   
-{
-  position: absolute;
-  display: inline-block;
-  width: 100vw;
+
+.colflex {
+
+  height: 100%;
+  width: 100%;
+  align-items: center;
 }
-.cent h1
-{   
-    margin: 0px;
-    margin-top: auto;
-    text-align: center;
-    color:#fef9f8;
-    font-size: 4rem;
-    font-family: 'Bodoni Moda';
+
+.tag {
+
+  margin: 0px;
+  padding: 0px;
+  height: 50%;
+  width: 100%;
+  color: #fef9f8;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column-reverse;
+  backdrop-filter: blur(2px);
+  font-family: 'Bodoni Moda';
+
 }
-.cent p
-{   
-    margin: 0px;
-    margin-bottom: auto;
-    text-align: center;
-    color:#fef9f8;
-    font-size: 2rem;
-    font-family: 'Bodoni Moda';
+
+.smtag {
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  margin: 0px;
+  color: #fef9f8;
+  backdrop-filter: blur(2px);
+  font-size: 2rem;
+  font-family: 'Bodoni Moda';
+
+
+
 }
-.cent
-{   
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    
+
+.cent {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  z-index: 2;
 }
-.cant
-{
-    position: relative;
+
+.cant {
+  position: relative;
 }
+
 .chumma {
   height: 4rem;
   z-index: 4;
   width: 100%;
 }
-.prodpic
-{ 
-    width: 18rem;
-    height: 15rem;
-    margin-top: 1rem;
-    border-radius: 2rem 2rem 0rem 0rem;
-    transition: all 1s;
+
+.prodpic {
+  width: 18rem;
+  height: 15rem;
+  margin-top: 1rem;
+  border-radius: 2rem 2rem 0rem 0rem;
+  transition: all 1s;
 }
-.prodpic:hover{
+
+.prodpic:hover {
   transform: translateZ(20px);
 }
-.det
-{
-    color:#0d0d0d;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 1rem;
-      font-family: 'Bodoni Moda';
-      transform: translateZ(10px);
+
+.det {
+  color: #0d0d0d;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1rem;
+  font-family: 'Bodoni Moda';
+  transform: translateZ(10px);
 }
-.pri
-{
-    color:#fef9f8;
-    margin-right: 2rem;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-size: 2rem;
-    font-family: 'Bodoni Moda'; 
+
+.pri {
+  color: #fef9f8;
+  margin-right: 2rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 2rem;
+  font-family: 'Bodoni Moda';
 }
-.crd
-{
-    display: flex;
+
+.crd {
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   transform: translateZ(40px);
 }
-.crt
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width:90%;
-    margin-top: auto;
-    margin-bottom: 1rem;
-    background-color: #0d0d0d;
-    border-radius: 2rem;
-    transform: translateZ(40px);
-   
+
+.crt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  background-color: #0d0d0d;
+  border-radius: 2rem;
+  transform: translateZ(40px);
+
 }
-.crt p
-{   
-    
-    color:#fef9f8;
-    margin: 0px auto;
-    font-size: 1rem;
-    font-family: 'Bodoni Moda';
+
+.crt p {
+
+  color: #fef9f8;
+  margin: 0px auto;
+  font-size: 1rem;
+  font-family: 'Bodoni Moda';
 }
-.shp
-{ 
+
+.shp {
   margin: 0px;
   margin-left: 1rem;
   padding: 0px;
   color: #ef9273;
   font-family: 'Bodoni Moda';
   font-weight: 500;
-  font-size: 2rem;  
+  font-size: 2rem;
   z-index: 3;
 }
-.footer
-{
-  background-color: #d6d6d6;
 
+.footer {
+  background-color: #d6d6d6;
 }
-.fot
-{
+
+.fot {
   font-family: 'Bodoni Moda';
   font-size: .75rem;
   text-align: center;
@@ -273,20 +306,20 @@ header {
   width: 100%;
 }
 
-.Lower
-{
+.lower {
   position: relative;
   z-index: 2;
 
 }
-.navsh
-{
+
+.navsh {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-evenly;
   width: 100%;
 }
+
 .rflexic {
   display: flex;
   flex-direction: row;
@@ -294,48 +327,83 @@ header {
   position: absolute;
   right: 7.5rem;
   width: 1.2rem;
-  height: 1.5rem ;
-  
+  height: 1.5rem;
+
 }
-header
-{
+
+header {
   z-index: 4;
   width: 100%;
 }
-nav
-{
+
+nav {
   z-index: 4;
   width: 100%;
 }
-@media screen and (max-width:500px)
-{
-  header
-{
-  z-index: 4;
-  width: 100%;
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 {
+  font-size: 18px;
 }
-nav
-{
-  z-index: 4;
-  width: 100%;
+
+.material-icons.md-24 {
+  font-size: 24px;
 }
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.material-icons.md-dark.md-inactive {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+}
+
+.material-icons.md-light.md-inactive {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (max-width:500px) {
+  header {
+    z-index: 4;
+    width: 100%;
+  }
+
+  nav {
+    z-index: 4;
+    width: 100%;
+  }
+
   .rflexbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: sticky;
-    background-color:#fef9f8;
-    top:2rem;
+    background-color: #fef9f8;
+    top: 2rem;
     width: 100vw;
     z-index: 100;
-    
+
   }
 
   .bar {
     display: flex;
     flex-direction: column;
     background-color: #0d0d0d;
-    height: 2rem;
+    height: 4rem;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -343,21 +411,23 @@ nav
     position: fixed;
     z-index: 4;
   }
-  .bar div
-  {
+
+  .bar div {
     max-width: 100%;
   }
+
   .navs {
     margin: 1rem;
     height: 1rem;
     padding: 0px;
-    color: #fef9f8; 
+    color: #fef9f8;
     font-family: 'Bodoni Moda';
     text-decoration: none;
     font-weight: lighter;
     font-size: .5rem;
-    text-align:end;
+    text-align: end;
   }
+
   .bran {
     margin: 0px;
     margin-left: 1rem;
@@ -365,214 +435,236 @@ nav
     color: #ef9273;
     font-family: 'Bodoni Moda';
     font-weight: 500;
-    font-size: 1rem;  
+    font-size: 2.5rem;
   }
-  .shp
-  {
+
+  .shp {
     margin: 1rem;
     padding: 0px;
     color: #ef9273;
     font-family: 'Bodoni Moda';
     font-weight: 500;
-    font-size: 1rem; 
-    z-index: 3; 
+    font-size: 1rem;
+    z-index: 3;
   }
-  body
-  {
+
+  body {
     width: 100%;
   }
+
   .chumma {
     height: auto;
     width: 100%;
     position: fixed;
   }
-  .cent h1
-{   
-    margin: 0px;
-    margin-top: auto;
-    text-align: center;
-    color:#fef9f8;
-    font-size: 2rem;
-    font-family: 'Bodoni Moda';
-}
-.cent p
-{   
-    margin: 0px;
-    margin-bottom: auto;
-    text-align: center;
-    color:#fef9f8;
-    font-size: 1rem;
-    font-family: 'Bodoni Moda';
-}
-.cent
-{   
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    
-}
-.chng {
-  height: 15rem;
-  background-size: cover;
-  max-width: 100%;
-}
-.prodpic
-{ 
+
+  .chng {
+    height: 50vh;
+    z-index: -2;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  .prodpic {
     width: 9rem;
     height: 7.5rem;
     margin-top: .5rem;
     border-radius: 2rem 2rem 0rem 0rem;
-}
-.det
-{
-    color:#0d0d0d;
+  }
+
+  .det {
+    color: #0d0d0d;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: .5rem;
     font-family: 'Bodoni Moda';
-}
-.pri
-{
-    color:#fef9f8;
+  }
+
+  .pri {
+    color: #fef9f8;
     margin-right: 2rem;
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 1rem;
-    font-family: 'Bodoni Moda'; 
-}
-.crd
-{
-    display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.crt
-{
+    font-family: 'Bodoni Moda';
+  }
+
+  .crd {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width:70%;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .crt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 70%;
     margin-top: auto;
     margin-bottom: .5rem;
     background-color: #0d0d0d;
-    border-radius: 2rem ;
-   
-}
-.crt p
-{   
-    
-    color:#fef9f8;
+    border-radius: 2rem;
+
+  }
+
+  .crt p {
+
+    color: #fef9f8;
     margin: 0px auto;
     font-size: .5rem;
     font-family: 'Bodoni Moda';
-}
+  }
 
-.prod {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  width: 10rem;
-  height: 12.5rem;
-  background-color: #ef9273;
-  border-radius: 2rem;
-  transition: all 0.5s;
-}
-.prflex {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.glay {
+  .prod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10rem;
+    height: 12.5rem;
+    background-color: #ef9273;
+    border-radius: 2rem;
+    transition: all 0.5s;
+  }
 
-  z-index: 2;
-}
-.hb
-{ 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 1.2rem;
-  height: 1.5rem ;
-  right:.5rem;
-  position: absolute;
-  right: 1rem;
-}
-.hbi
-{
-  width: 100%;
-  height: .1rem;
-  border-radius: 1rem;
-  background-color: #d6d6d6;
-}
-.navic
-{
+  .prflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .glay {
+
+    z-index: 2;
+  }
+
+  .hb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 1.5rem;
+    height: 2.5rem;
+    right: .5rem;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .hbi {
+    width: 100%;
+    height: .1rem;
+    border-radius: 1rem;
+    background-color: #d6d6d6;
+  }
+
+  .navic {
     color: #fef9f8;
     height: 1rem;
     width: auto;
     margin: 1rem;
-}
-.revreflex 
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  transition: all 1s;
-}
-.revreflex a
-{
-  text-align: center;
-  border: .5px solid #d6d6d6; 
-  border-left: 0px;
-  border-right: 0px;
-  border-collapse: collapse ;
-  margin: 0px;
-  padding: 1rem;
-}
-.navsh
-{
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  right: -100%;
-  transition: all 1s;
+  }
 
-}
-.navsh.active
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0d0d0d;
-  width: fit-content;
-  position: absolute;
-  right:0px;
-  top:2rem;
-  padding-bottom: 100vh;
+  .revreflex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 1s;
+  }
+
+  .revreflex a {
+    text-align: center;
+    border: .5px solid #d6d6d6;
+    border-left: 0px;
+    border-right: 0px;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 1rem;
+  }
+
+  .navsh {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    right: -100%;
+    transition: all 1s;
+
+  }
+
+  .navsh.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0d0d0d;
+    width: fit-content;
+    position: absolute;
+    right: 0px;
+    top: 2rem;
+    padding-bottom: 100vh;
 
 
-}
-.rflexic {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: absolute;
-  right: 7.5rem;
-  width: 1.2rem;
-  height: 1.5rem ;
-}
-.footer
-{
-  width: 100%;
-}
+  }
+
+  .rflexic {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    right: 7.5rem;
+    width: 1.2rem;
+    height: 1.5rem;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .tag {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    color: #fef9f8;
+    font-size: 3rem;
+    font-family: 'Bodoni Moda';
+
+  }
+
+  .smtag {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    align-items: center;
+    margin: 0px;
+    text-align: center;
+    color: #fef9f8;
+    font-size: 1rem;
+    font-family: 'Bodoni Moda';
+
+  }
+
+  .cent {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .lower {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+
+  }
 }
