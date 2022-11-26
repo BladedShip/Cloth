@@ -45,11 +45,6 @@
   gap: 2rem;
 }
 
-.revreflex {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
 
 .cflex {
   display: flex;
@@ -75,6 +70,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #0d0d0d;
   height: 4rem;
   margin: 0px;
@@ -107,20 +103,6 @@ header {
 
 }
 
-.navs {
-  margin: 0px;
-  width: 7rem;
-  padding: 0px;
-  color: #fef9f8;
-  font-family: 'Bodoni Moda';
-  text-decoration: none;
-  font-weight: lighter;
-  font-size: 1rem;
-  text-align: center;
-  border-width: .05rem;
-
-
-}
 
 .navic {
   color: #fef9f8;
@@ -161,7 +143,7 @@ header {
   position: relative;
   white-space: nowrap;
   width: 100%;
-
+  top:4rem;
 }
 
 .colflex {
@@ -183,7 +165,6 @@ header {
   flex-direction: column-reverse;
   backdrop-filter: blur(2px);
   font-family: 'Bodoni Moda';
-
 }
 
 .smtag {
@@ -306,29 +287,87 @@ header {
   width: 100%;
 }
 
-.lower {
+.Lower {
+
   position: relative;
   z-index: 2;
+  margin-top: 4rem;
 
 }
 
+
 .navsh {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  right: -100%;
+  transition: all 1s;
+
+
+}
+
+.navsh.active {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d0d0d;
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+  top: 4rem;
+  padding-bottom: 100vh;
+
+
 }
 
 .rflexic {
   display: flex;
   flex-direction: row;
   align-items: center;
+  right:0px;
+  margin: 0rem 1rem;
   position: absolute;
-  right: 7.5rem;
-  width: 1.2rem;
-  height: 1.5rem;
 
+}
+.rflexic span
+{
+  margin: 0rem 1rem;
+}
+.revreflex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 8rem;
+  margin: 0rem 1rem;
+  transition: all 300ms;
+  
+}
+
+.revreflex a {
+  text-align: center;
+  background-color: #5e5e5e38;
+  margin: 1px;
+  padding: 1rem;
+  border-radius:1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #d6d6d6;
+  width: 100%;
+  transition: all 300ms;
+}
+.revreflex a:active {
+  text-align: center;
+  background-color:#0d0d0d;
+  margin: 1px;
+  padding: 1rem;
+}
+.revreflex a:hover {
+  text-align: center;
+  background-color:#0d0d0d;
+  margin: 1px;
+  padding: 1rem;
+  font-size:1.2rem;
 }
 
 header {
@@ -393,7 +432,7 @@ nav {
     align-items: center;
     position: sticky;
     background-color: #fef9f8;
-    top: 2rem;
+    top: 4rem;
     width: 100vw;
     z-index: 100;
 
@@ -404,6 +443,7 @@ nav {
     flex-direction: column;
     background-color: #0d0d0d;
     height: 4rem;
+    justify-content: center;
     margin: 0px;
     padding: 0px;
     width: 100%;
@@ -424,7 +464,6 @@ nav {
     font-family: 'Bodoni Moda';
     text-decoration: none;
     font-weight: lighter;
-    font-size: .5rem;
     text-align: end;
   }
 
@@ -463,6 +502,7 @@ nav {
     z-index: -2;
     overflow: auto;
     white-space: nowrap;
+    top:4rem;
   }
 
   .prodpic {
@@ -581,13 +621,17 @@ nav {
 
   .revreflex a {
     text-align: center;
-    border: .5px solid #d6d6d6;
-    border-left: 0px;
-    border-right: 0px;
-    border-collapse: collapse;
-    margin: 0px;
+    background-color: #5e5e5e38;
+    margin: 1px;
     padding: 1rem;
   }
+  .revreflex a:active {
+    text-align: center;
+    background-color:#0d0d0d;
+    margin: 1px;
+    padding: 1rem;
+  }
+
 
   .navsh {
     display: none;
@@ -595,6 +639,7 @@ nav {
     align-items: center;
     right: -100%;
     transition: all 1s;
+
 
   }
 
@@ -606,7 +651,7 @@ nav {
     width: fit-content;
     position: absolute;
     right: 0px;
-    top: 2rem;
+    top: 4rem;
     padding-bottom: 100vh;
 
 
@@ -617,9 +662,7 @@ nav {
     flex-direction: row;
     align-items: center;
     position: absolute;
-    right: 7.5rem;
-    width: 1.2rem;
-    height: 1.5rem;
+
   }
 
   .footer {
@@ -661,10 +704,10 @@ nav {
     z-index: 2;
   }
 
-  .lower {
+  .Lower {
     position: relative;
     z-index: 2;
     width: 100vw;
-
+    margin-top: 4rem;
   }
 }

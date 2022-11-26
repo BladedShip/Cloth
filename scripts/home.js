@@ -67,10 +67,8 @@ togb.addEventListener('click',() =>{
 )
 change=()=>{
     i=i%5+1;
-    togi.style.transition="300ms"
+    togi.style.transition="1s"
     togi.style.backgroundImage="url('RES/bg/mbg"+i+".jpg')";
-    setTimeout(change, 3000);
-    console.log("PUNDAE "+i);
-    
+    setTimeout(change, 3000); 
 };
 change();
