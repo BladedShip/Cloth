@@ -204,6 +204,8 @@ header {
 .prodpic {
   width: 18rem;
   height: 15rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   margin-top: 1rem;
   border-radius: 2rem 2rem 0rem 0rem;
   transition: all 1s;
@@ -316,9 +318,8 @@ header {
   position: absolute;
   right: 0px;
   top: 4rem;
+  padding: 2rem;
   padding-bottom: 100vh;
-
-
 }
 
 .rflexic {
