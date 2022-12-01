@@ -93,6 +93,8 @@ header {
 }
 
 .bran {
+  user-select: none;
+  text-decoration: none;
   margin: 0px;
   margin-left: 2rem;
   padding: 0px;
@@ -257,8 +259,8 @@ header {
 
 }
 
-.crt p {
-
+.crt a {
+ text-decoration: none;
   color: #fef9f8;
   margin: 0px auto;
   font-size: 1rem;
@@ -470,6 +472,7 @@ nav {
   }
 
   .bran {
+    text-decoration: none;
     margin: 0px;
     margin-left: 1rem;
     padding: 0px;
@@ -553,12 +556,13 @@ nav {
 
   }
 
-  .crt p {
+  .crt a{
 
     color: #fef9f8;
     margin: 0px auto;
     font-size: .5rem;
     font-family: 'Bodoni Moda';
+    text-decoration: none;
   }
 
   .prod {

@@ -4,6 +4,18 @@ body {
   margin: 0px;
   padding: 0px;
 }
+.bran {
+  user-select: none;
+  text-decoration: none;
+  margin: 0px;
+  margin-left: 2rem;
+  padding: 0px;
+  color: #ef9273;
+  font-family: 'Bodoni Moda';
+  font-weight: 500;
+  font-size: 3.5rem;
+
+}
 
 .bar {
   display: flex;
